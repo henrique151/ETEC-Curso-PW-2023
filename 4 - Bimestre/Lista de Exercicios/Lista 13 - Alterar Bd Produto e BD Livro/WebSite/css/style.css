@@ -1,0 +1,125 @@
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;1,100;1,300&display=swap");
+    * {
+        font-family: 'Poppins', sans-serif;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        outline: none;
+        text-decoration: none;
+        border: none;
+        list-style: none;
+        text-decoration: none;
+        scroll-behavior: smooth;
+        scroll-padding-top: 3rem;
+    }
+    
+    body {
+        overflow: hidden;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .menu {
+        background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
+        position: relative;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .menu h3 {
+        color: #fff;
+    }
+    
+    .container-right {
+        display: grid;
+        grid-template-columns: repeat(3, 2fr);
+        gap: 1.5rem;
+    }
+    
+    img {
+        display: inline-block;
+        object-fit: cover;
+        width: 100px;
+        height: auto;
+    }
+    
+    .img-container {
+        box-shadow: 0px 10px 40px #00000056;
+        border-radius: 1rem;
+        width: 320px;
+        height: 280px;
+        display: inline-block;
+        padding: 20px;
+        background-color: #466c8c;
+    }
+    
+    .img-container img {
+        width: 73px;
+        margin-left: 37%;
+        margin-bottom: 1.5rem;
+        transition: all 400ms ease;
+    }
+    
+    .text {
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+    }
+    
+    .text h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .button {
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        background-color: #466c8c;
+        color: #fff;
+        column-gap: .5rem;
+        font-weight: 500;
+        padding: .75rem 1.4rem;
+        border-radius: .25rem;
+        position: relative;
+        z-index: 1;
+    }
+    
+    .button::after {
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #517fa4;
+        transform-origin: center;
+        z-index: -1;
+        transform: scale(0);
+        border-radius: .25rem;
+        transition: .4s;
+    }
+    
+    .button:hover::after {
+        transform: scale(1);
+    }
+    
+    .img-container:hover img {
+        transform: rotateY(360deg);
+        transition: transform .8s;
+    }
+    
+    .button__icon {
+        font-size: 1.25rem;
+    }
+    
+    @media (max-width: 1024px) {
+        body {
+            overflow: visible;
+        }
+        .container-right {
+            grid-template-columns: 2fr;
+        }
+    }

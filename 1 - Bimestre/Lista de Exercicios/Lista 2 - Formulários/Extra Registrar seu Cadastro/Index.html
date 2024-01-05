@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Tela de Cadastro Simples</title>
+</head>
+
+<body>
+
+
+    <div class="central-container">
+        <div class="forms">
+            <div class="form restito">
+                <span class="title">Registrar seu Cadastro no Banco</span>
+
+                <form name="banco" action="php/dados.php" method="post">
+                    <div class="input-div">
+                        <input type="text" placeholder="Digite seu Nome" required name="nomecli">
+                        <i class="uil uil-user"></i>
+                    </div>
+                    <div class="input-div">
+                        <input type="text" placeholder="Digite seu Email" required name="emailcli">
+                        <i class="uil uil-envelope icon"></i>
+                    </div>
+                    <div class="input-div">
+                        <input type="text" placeholder="CPF" required name="CPFcli">
+                        <i class="uil uil-file-shield-alt"></i>
+                    </div>
+                    <div class="input-div">
+                        <input type="text" placeholder="RG" required name="RGcli">
+                        <i class="uil uil-file-shield-alt"></i>
+                    </div>
+
+                    <div class="input-div">
+                        <input type="text" placeholder="Telefone" required name="telefonecli">
+                        <i class="uil uil-mobile-android"></i>
+                    </div>
+
+                    <div class="input-div">
+                        <input type="password" class="password" placeholder="Digite uma senha" required name="senhacli">
+                        <i class="uil uil-lock icon "></i>
+                    </div>
+
+                    <div class="option-text">
+                        <div class="banco-content">
+                            <span class="title2"><i class="uil uil-university ponto"></i>Bancos</span>
+                            <select name="baconsdocli">
+                                <option value="BB">BB</option>
+                                <option value="Itau">Itaú</option>
+                                <option value="Caixa">Caixa</option>
+                                <option value="Bradesco">Bradesco</option>
+                                <option value="Santander">Santander</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="input-div button">
+                        <input type="submit" type="button" value="Registrar">
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

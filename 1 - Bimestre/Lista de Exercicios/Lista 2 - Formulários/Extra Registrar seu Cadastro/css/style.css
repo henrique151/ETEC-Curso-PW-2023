@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../img/A.png);
+}
+
+.central-container {
+    position: relative;
+    max-width: 560px;
+    width: 100%;
+    background: #fff;
+    border-radius: 2rem;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 0 20px;
+}
+
+.central-container .forms {
+    display: flex;
+    align-items: center;
+    height: 570px;
+    width: 200%;
+    transition: all 400ms ease;
+}
+
+.central-container .form {
+    width: 50%;
+    padding: 30px;
+    background-color: #fff;
+    transition: margin-left 0.18ms ease;
+}
+
+.central-container .forms .title {
+    position: relative;
+    margin: 1.3rem;
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+.forms .title::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 3px;
+    width: 100%;
+    background-color: rgb(141, 140, 140);
+    border-radius: 25px;
+}
+
+.forms .input-div {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.input-div input {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border: none;
+    padding: 0 35px;
+    outline: none;
+    font-size: 18px;
+    border-top: 2px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.input-div input:is(:focus,
+ :valid) {
+    color: #47c1b2;
+}
+
+.input-div i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #9D9EA3;
+    font-size: 23px;
+    transition: all 0.2 ease;
+}
+
+.input-div input:is(:focus,
+ :valid)~i {
+    color: #47c1b2;
+}
+
+.input-div i.icon {
+    left: 0;
+}
+
+.forms .text {
+    color: #333;
+    font-size: 14px;
+}
+
+.forms a.text {
+    color: #47c1b2;
+    text-decoration: none;
+}
+
+.forms a:hover {
+    text-decoration: underline;
+}
+
+.forms .button {
+    margin-top: 35px;
+}
+
+.forms .button input {
+    border: none;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 6px;
+    background-color: #47c1b2;
+    cursor: pointer;
+    transition: all 400ms ease;
+}
+
+.button input:hover {
+    background-color: #0c1b24;
+}
+
+.central-container .forms .title2 {
+    color: #47c1b2;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+.central-container .forms .ponto {
+    margin-right: 13px;
+    margin-left: 2px;
+    color: #47c1b2;
+}
+
+.forms .banco-content {
+    margin-bottom: 2rem;
+    display: grid;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.banco-content option {
+    font-size: 1rem;
+}
+
+.banco-content option:hover {
+    color: #47c1b2;
+}
