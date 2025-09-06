@@ -106,4 +106,4 @@ Este repositório é voltado para uso educacional. Sinta-se à vontade para suge
 
 ---
 
-**Bons estudos e sucesso na sua jornada
+**Bons estudos e sucesso na sua jornada**
